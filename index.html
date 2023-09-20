@@ -17,6 +17,32 @@
         <p id="save-el">previous entries:</p>
       </div>
     </div>
+    <hr>
+    <h2>Contact</h2>
+  
+  <div class="Contact" id="Contact">
+    <p>For all the services, please include your name, email address, and reason for contact and I will get back to as soon as possible!
+      <br>
+      <form target="_blank" action="https://formsubmit.co/el/tusaxo" method="POST" id="contact-form">
+        <!-- <input type="hidden" name="_captcha" value="false"> -->
+        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+      <label for="name">name</label>
+      <input type="name" id="name" placeholder="name" required>
+      <div>
+      <label for="email">email address</label>
+      <!-- <input type="email" id="email" pattern=".+@globex\.com" placeholder="email@..." required> -->      
+      <input value="" type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="email@..." required="" title="Not Valid">
+
+      </div>
+      <br>
+      <br>
+      <label for="Services">services required</label>
+      <textarea name="Service" id="Service" cols="30" rows="10" placeholder="Services " required></textarea>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+      </form>
+    </p>
+  </div>
     <script src="index.js"></script>
   </body>
 </html>
